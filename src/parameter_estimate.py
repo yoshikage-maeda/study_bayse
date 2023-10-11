@@ -21,7 +21,7 @@ for sample_num in [10, 100, 1000]: # サンプルを10, 100, 1000で試してみ
     # = (Σ x_i +a -1) ln \theta  + (N - Σ x_i +b -1) ln (1-\theta)
     # グッと、両辺を見比べてみると、右辺はＢeta(Σ x_i +a, N - Σ x_i +b)になっている！！
     a_prime = sum(sample) + a # 事後分布のパラメータa'
-    b_prime = sample_num - sum(sample) + b
+    b_prime = sample_num - sum(sample) + b # 事後分布のパラメータb'
     
     # 以下、可視化用
     view_sample = np.random.beta(a_prime, b_prime, 10000)
