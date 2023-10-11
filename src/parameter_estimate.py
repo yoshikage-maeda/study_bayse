@@ -1,7 +1,7 @@
 import random
 import numpy as np
 import matplotlib.pyplot as plt
-# ここでは、赤玉と白玉が混じった袋の中から復元抽出試行を繰り返して、赤玉と白玉の比率を推定する。
+# 赤玉と白玉が混じった袋の中から復元抽出試行を繰り返して、赤玉と白玉の比率を推定する。
 
 a = 1
 b = 2
